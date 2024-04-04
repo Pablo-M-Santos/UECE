@@ -1,59 +1,135 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <title>Rodapé</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>StayOn</title>
 </head>
 <body>
-	<body>
-		<section></section>
-	</body>
-  <footer class="rodape">
-  	 <div class="container">
-  	 	<div class="linha">
-  	 		<div class="coluna-rodape">
-  	 			<h4>ESTUDE PARA A UECE</h4>
-  	 			<ul>
-  	 				<li><a href="#">Painel do Aluno</a></li>
-  	 				<li><a href="#">Matérias</a></li>
-  	 				<li><a href="#">Correção de Redação</a></li>
-  	 				<li><a href="#">Aulas ao Vivo</a></li>
-  	 			</ul>
-  	 		</div>
-  	 		<div class="coluna-rodape">
-  	 			<h4>MATERIAIS GRATUITOS</h4>
-  	 			<ul>
-  	 				<li><a href="#">Resumos para a UECE</a></li>
-  	 				<li><a href="#">Gabarito UECE</a></li>
-  	 				<li><a href="#">Calculadora de Notas UECE</a></li>
-  	 				<li><a href="#">Simulador UECE</a></li>
-  	 				<li><a href="#">Dicas de preparação</a></li>
-  	 			</ul>
-  	 		</div>
-  	 		<div class="coluna-rodape">
-  	 			<h4>EVENTOS E PALESTRAS</h4>
-  	 			<ul>
-  	 				<li><a href="#">Palestras e Seminários</a></li>
-  	 				<li><a href="#">Atividades Culturais</a></li>
-  	 				<li><a href="#">Eventos Esportivos</a></li>
-  	 				<li><a href="#">Feiras e Exposições</a></li>
-  	 			</ul>
-  	 		</div>
-  	 		<div class="coluna-rodape">
-  	 			<h4>ENTRE EM CONTATO</h4>
-  	 			<div class="links-sociais">
-  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
-  	 				<a href="#"><i class="fab fa-twitter"></i></a>
-  	 				<a href="#"><i class="fab fa-instagram"></i></a>
-  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
-  	 			</div>
-  	 		</div>
-  	 	</div>
-  	 </div>
-  </footer>
+    <!-- nav -->
+    <header>
+        <nav id="nav">
+            <p>StayOn</p>
+            <div>
+                <a href="template/pagina.html">Home</a>
+                <a href="#">Vestibulares</a>
+                <a href="#">ENEM</a>
+                <a href="#">UECE</a>
+                <a href="#">Sobre</a>
+            </div>
+        </nav>
+    </header>
+    <!-- main -->
+    <main>
+        <!-- home - calculadora -->
+        <section class="container">
+            <p>Calculadora da Média da UECE</p>
+            <!-- <img class="banner" src="./img/banner.png" alt=""> -->
 
+            <div class="container-calc">
+                <h2>Coloque aqui suas notas e descubra a sua média da UECE</h2>
+                <form action="#">
+
+                    <input type="number" placeholder="Humanas:" id="humanas" max="999" min="0" required>
+                    <input type="number" placeholder="Línguagens:" id="linguagens" max="999" min="0" required>
+                    <input type="number" placeholder="Natureza:" id="natureza" max="999" min="0" required>
+                    <button type="button" onclick="cursosUece()">CALCULAR</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- sobre -->
+        <section class="sobre">
+            <p class="titulo">Sobre</p>
+            <div class="textos">
+                <p class="texto1">
+                    Pablo e Ryan uniram suas habilidades em programação para criar uma aplicação web que visa descomplicar o entendimento do ENEM e da UECE. Com conhecimentos sólidos em HTML, CSS e JavaScript, a dupla está trabalhando arduamente para oferecer uma plataforma intuitiva e informativa. O foco principal do projeto é fornecer uma explicação abrangente sobre o ENEM e a UECE, tornando esses processos mais acessíveis para o público em geral. Através de uma interface amigável e recursos interativos, os usuários poderão explorar informações sobre os 
+                <p class="texto2">
+                    exames, desde o funcionamento básico até dicas valiosas para se preparar adequadamente.
+    
+                    Com a aplicação em desenvolvimento, Pablo e Ryan estão comprometidos em simplificar a jornada dos estudantes que buscam compreender melhor esses importantes exames educacionais. Seu trabalho representa não apenas um projeto técnico, mas também um esforço para promover a igualdade de acesso à educação, capacitando indivíduos com o conhecimento necessário para alcançar seus objetivos acadêmicos.
+                </p>
+            </div>
+            <div class="img">
+                <img class="img-uece-sobre" src="./img/img-uece.jpg" alt="Imagem da empresa UECE">
+            </div>
+            <div class="textos">
+                <p class="texto1">
+                    A Universidade Estadual do Ceará (UECE) é uma instituição pública de ensino superior localizada no estado do Ceará, Brasil. Fundada em 1975, a UECE tem como missão principal oferecer educação de qualidade, pesquisa e extensão para a comunidade cearense e além.
+                    A UECE oferece uma ampla gama de cursos de graduação, pós-graduação e extensão, abrangendo áreas como ciências humanas, ciências exatas, ciências biológicas, engenharias, artes, educação, saúde, entre outras. Seus cursos são ministrados por professores altamente
+                    
+                <p class="texto2">
+                    exames, desde o funcionamento básico até dicas valiosas para se preparar adequadamente.
+    
+                    qualificados e a infraestrutura da universidade é voltada para proporcionar um ambiente propício ao aprendizado e à pesquisa.Além disso, a UECE desempenha um papel importante no desenvolvimento socioeconômico da região, através de parcerias com órgãos governamentais, empresas e organizações da sociedade civil. A universidade também contribui para a produção de conhecimento científico e tecnológico, bem como para a formação de profissionais capacitados e cidadãos conscientes de seu papel na sociedade.
+                </p>
+            </div>
+        </section>
+
+        <!-- cursos -->
+        <section class="cursos">
+            <p class="titulo">Sobre</p>
+
+            <div class="card1 cards"></div>
+            <div class="card2 cards"></div>
+            <div class="card3 cards"></div>
+            <div class="card4 cards"></div>
+            <div class="card5 cards"></div>
+            <div class="card6 cards"></div>
+            <div class="card7 cards"></div>
+            <div class="card8 cards"></div>
+            <div class="card9 cards"></div>
+            <div class="card10 cards"></div>
+        </section>
+
+    </main>
+    <!-- footer -->
+    <!-- <footer class="rodape">
+        <div class="container-footer">
+            <div class="linha">
+                <div class="coluna-rodape">
+                    <h4>ESTUDE PARA A UECE</h4>
+                    <ul>
+                        <li><a href="#">Painel do Aluno</a></li>
+                        <li><a href="#">Matérias</a></li>
+                        <li><a href="#">Correção de Redação</a></li>
+                        <li><a href="#">Aulas ao Vivo</a></li>
+                    </ul>
+                </div>
+                <div class="coluna-rodape">
+                    <h4>MATERIAIS GRATUITOS</h4>
+                    <ul>
+                        <li><a href="#">Resumos para a UECE</a></li>
+                        <li><a href="#">Gabarito UECE</a></li>
+                        <li><a href="#">Calculadora de Notas UECE</a></li>
+                        <li><a href="#">Simulador UECE</a></li>
+                        <li><a href="#">Dicas de preparação</a></li>
+                    </ul>
+                </div>
+                <div class="coluna-rodape">
+                    <h4>EVENTOS E PALESTRAS</h4>
+                    <ul>
+                        <li><a href="#">Palestras e Seminários</a></li>
+                        <li><a href="#">Atividades Culturais</a></li>
+                        <li><a href="#">Eventos Esportivos</a></li>
+                        <li><a href="#">Feiras e Exposições</a></li>
+                    </ul>
+                </div>
+                <div class="coluna-rodape">
+                    <h4>ENTRE EM CONTATO</h4>
+                    <div class="links-sociais">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer> -->
+
+    <script src="js/script.js"></script>
 </body>
 </html>
