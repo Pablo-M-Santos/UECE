@@ -23,7 +23,7 @@ nav{
     background-color: rgba(48, 48, 48, 0);
     width: 100%;
     display: flex;
-    padding: 1rem;
+    padding: 0.2rem;
     padding-inline: 5%;
     margin-inline: auto;
     color: rgb(0, 0, 0);
@@ -31,9 +31,8 @@ nav{
     transition: 1s ease;
 }
 
-nav p{
-    font-size: xx-large;
-    color: white;
+nav img{
+    width: 80px;
 }
 
 nav div{
