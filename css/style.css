@@ -148,7 +148,8 @@ form button {
 /* sobre */
 .sobre {
     height: auto;
-    margin: 100px 200px 0px;
+    padding-top: 100px;
+    margin:  0px 200px 0px;
 }
 
 .sobre .titulo {
@@ -185,7 +186,7 @@ form button {
 }
 
 .sobre .img-uece-sobre {
-    height: 600px;
+    height: 400px;
     margin-top: 50px;
     -webkit-box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.75);
@@ -195,19 +196,80 @@ form button {
 }
 
 /* Cursos */
-
-.sobre {
+.cursos {
     height: 100vh;
-    margin: 100px 200px 0px;
+    margin: 80px 200px;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    clear: both;
 }
+
+.cursos .titulo {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    
+}
+.cards {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 50px;
+   margin-top: 100px;
+   justify-content: center; 
+   align-items: center;
+}
+
+.card  {
+    height: 217px;
+    width: 268px;
+    border-radius: 10px;
+    border: 1px solid #ccc; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 500ms ease-out;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.img-card {
+    width: 200px;
+}
+
+.card .img-card {
+    width: 100%;
+    height: auto;
+}
+    
+.texto-card h3 {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 30px;
+}
+
 /* Footer */
+
+footer {
+    position: relative; /* Adiciona esta propriedade */
+    bottom: 0; /* Posiciona o footer na parte inferior da página */
+    width: 100%; /* Garante que o footer ocupe toda a largura */
+    background-color: #24262b;
+    padding: 70px 0;
+    clear: both;
+    margin-top: 2200px;
+}
+
 .container-footer{
 	max-width: 1170px;
 	margin:auto;
+    clear: both;
 }
 .linha{
 	display: flex;
 	flex-wrap: wrap;
+    
 }
 ul{
 	list-style: none;
